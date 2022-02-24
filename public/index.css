@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+
+body, html {
+    height: 100vh;
+    width: 100vw;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+}
+
+.main{
+    display: flex;
+    margin-top: 3vh;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.top{
+    display: flex;
+    width: 100vw;
+    align-items: center;
+    justify-content: space-between;
+        
+}
+
+.menu{
+    display: flex;
+    position: relative;
+    align-items: center;
+    margin-right: 4vw;
+}
+
+.menu div {
+    margin: 1vw;
+    font-family: 'Roboto', sans-serif;
+    background-color: white;
+    min-width: 68px;
+    min-height: 44px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    display: flex;
+}
+
+.menu div:hover {
+    background-color: #00A8FF ;
+    color: white;
+}
+
+#reserve{
+    background-color:#FF0096 ;
+    color: white;
+    min-width: 134px;
+    min-height: 44px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    display: flex;
+}
+#reserve:hover {
+    background-color: #FF80CA;
+}
+
+.logos{
+    display: flex;
+    position: relative;
+    align-items: center;
+    margin-left: 4.5vw;
+}
+
+
+.carrossel{
+
+    overflow: hidden;
+    max-width: 90vw;
+    height: auto;
+
+}
+.container{
+    margin: 0;
+    padding: 0;
+    border-radius: 24px;
+    max-width: 90vw;
+    height: auto;
+    position: relative;
+    transition:   0.5s ease-in-out ;
+    transform: translateX(0);
+    display: flex;
+}
+
+.container img {
+    border-radius: 8px;
+    max-width: 90vw;
+    height: auto;
+    border-radius: 24px;
+    object-fit: cover;
+}
+.circulos{
+    position: absolute;
+    display: flex;
+    z-index: 1;
+    margin-top: 3vh;
+    margin-left: 4vw;
+}
+
+.circulos img {
+    margin: 5px;
+    border-radius: 50%;
+    
+}
+
+.tranformTitle{
+    display: flex;
+    position: absolute;
+    z-index: 1;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 50vw;
+    margin-top: 30%;
+    color: white;
+    margin-left: 4vw;
+
+}
+
+
