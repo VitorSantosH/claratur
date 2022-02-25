@@ -7,33 +7,38 @@ body, html {
     font-size: 16px;
     font-family: 'Roboto', sans-serif;
     overflow-x: hidden;
+    min-height: 2000px;
 }
 
-.main{
+.main {
     display: flex;
-    margin-top: 3vh;
+    margin-top: 4vw;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
 }
 
-.top{
+.top {
     display: flex;
     width: 100vw;
     align-items: center;
     justify-content: space-between;
-        
+
 }
 
-.menu{
+.menu {
     display: flex;
     position: relative;
     align-items: center;
-    margin-right: 4vw;
+    margin-right: 4.5vw;
+}
+
+.logos img {
+    margin: 5px;
 }
 
 .menu div {
-    margin: 1vw;
+    margin: 0.5vw;
     font-family: 'Roboto', sans-serif;
     background-color: white;
     min-width: 68px;
@@ -45,12 +50,12 @@ body, html {
 }
 
 .menu div:hover {
-    background-color: #00A8FF ;
+    background-color: #00A8FF;
     color: white;
 }
 
-#reserve{
-    background-color:#FF0096 ;
+#reserve {
+    background-color: #FF0096;
     color: white;
     min-width: 134px;
     min-height: 44px;
@@ -59,11 +64,12 @@ body, html {
     border-radius: 8px;
     display: flex;
 }
+
 #reserve:hover {
     background-color: #FF80CA;
 }
 
-.logos{
+.logos {
     display: flex;
     position: relative;
     align-items: center;
@@ -71,21 +77,22 @@ body, html {
 }
 
 
-.carrossel{
+.carrossel {
 
     overflow: hidden;
     max-width: 90vw;
     height: auto;
 
 }
-.container{
+
+.container {
     margin: 0;
     padding: 0;
     border-radius: 24px;
     max-width: 90vw;
     height: auto;
     position: relative;
-    transition:   0.5s ease-in-out ;
+    transition: 0.5s ease-in-out;
     transform: translateX(0);
     display: flex;
 }
@@ -97,31 +104,119 @@ body, html {
     border-radius: 24px;
     object-fit: cover;
 }
-.circulos{
-    position: absolute;
-    display: flex;
-    z-index: 1;
-    margin-top: 3vh;
-    margin-left: 4vw;
+
+.circulos {
+    position: relative;
+    display: block;
+    z-index: 2;
+    top: 100px;
+    margin-left: 8vw;
+
 }
 
 .circulos img {
     margin: 5px;
     border-radius: 50%;
-    
+
 }
 
-.tranformTitle{
+.tranformTitle {
     display: flex;
-    position: absolute;
+    position: fixed;
     z-index: 1;
     flex-direction: row;
     flex-wrap: wrap;
     max-width: 50vw;
-    margin-top: 30%;
+    margin-top: 25vw;
     color: white;
     margin-left: 4vw;
 
 }
 
 
+.tranformTitle h1 {
+    font-size: 4vw;
+}
+
+.ConhecaPacotes {
+    background-color: #FED400;
+    color: #57330F;
+    border-radius: 16px;
+    font-size: 16px;
+    min-height: 68px;
+    min-width: 230px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.saibaMais {
+    display: flex;
+    position: sticky;
+    z-index: 2;
+    margin-left: 75vw;
+    margin-top: -6vw;
+    color: white;
+    max-width: 80px;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+
+}
+
+.sobre {
+    margin-top: 4vh;
+    display: flex;
+    max-width: 90vw;
+    width: 100%;
+
+}
+
+
+.missao {
+    display: flex;
+    max-width: 40vw;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-size: 24px;
+    font-weight: 300;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    margin-left: 5vw;
+}
+
+.title {
+    width: 100%;
+    margin-bottom: 0px;
+}
+
+#retanguloSobre {
+    width: 90px;
+    height: 8px;
+}
+
+.missaoImg {
+    display: flex;
+    max-width: 40vw;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-size: 24px;
+    font-weight: 300;
+    color: black;
+    margin-left: 5vw;
+}
+
+.missaoImg img {
+    max-width: 30vw;
+    height: auto;
+    margin-left: 2vw;
+}
+
+
+@media only screen and (max-width: 900px) {
+    .menu {
+        display: none;
+    }
+}
