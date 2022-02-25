@@ -169,16 +169,22 @@ body, html {
 .sobre {
     margin-top: 4vh;
     display: flex;
+    flex-wrap: wrap;
     max-width: 90vw;
+    height: auto;
     width: 100%;
 
+}
+.missao img {
+    position: relative;
+    top: 0px;
 }
 
 
 .missao {
     display: flex;
     max-width: 40vw;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     font-size: 24px;
     font-weight: 300;
@@ -189,7 +195,11 @@ body, html {
 
 .title {
     width: 100%;
+    box-sizing: content-box;
     margin-bottom: 0px;
+    text-align: justify;
+    height: 50px;
+    display: flex;
 }
 
 #retanguloSobre {
@@ -209,9 +219,11 @@ body, html {
 }
 
 .missaoImg img {
-    max-width: 30vw;
+    min-width: 500px;
     height: auto;
     margin-left: 2vw;
+    border-radius: 16px;
+
 }
 
 
@@ -219,4 +231,16 @@ body, html {
     .menu {
         display: none;
     }
+    .missao{
+        min-width: 80vw;
+    }
+    .missaoImg{
+        min-width: 80vw;
+        margin-top: 5vw;
+    }
+    .missaoImg img {
+        min-width: 60vw;
+        height: auto;
+    }
+
 }
