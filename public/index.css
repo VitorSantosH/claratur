@@ -154,16 +154,26 @@ body, html {
 
 .saibaMais {
     display: flex;
-    position: sticky;
+    position: relative;
     z-index: 2;
     margin-left: 75vw;
     margin-top: -6vw;
     color: white;
-    max-width: 80px;
-    flex-direction: row;
+    min-width: 78px;
+    width: auto;
+    height: auto;
+    flex-direction: column;
     flex-wrap: wrap;
+    align-items: center;
 
 
+}
+
+.saibaMais img {
+    width: 4vw;
+    min-height: 5vw;
+    height: auto;
+    min-width: 80px;
 }
 
 .sobre {
@@ -175,6 +185,7 @@ body, html {
     width: 100%;
 
 }
+
 .missao img {
     position: relative;
     top: 0px;
@@ -205,6 +216,22 @@ body, html {
 #retanguloSobre {
     width: 90px;
     height: 8px;
+    margin-top: 20px;
+}
+
+#logosParceiros {
+    max-width: 305px;
+    height: auto;
+}
+
+#parceiros {
+    margin-top: 20px;
+    color: #808080;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 125%;
+
 }
 
 .missaoImg {
@@ -215,14 +242,78 @@ body, html {
     font-size: 24px;
     font-weight: 300;
     color: black;
-    margin-left: 5vw;
+    margin-left: 2vw;
 }
+
 
 .missaoImg img {
     min-width: 500px;
     height: auto;
-    margin-left: 2vw;
+    margin-left: 3vw;
     border-radius: 16px;
+
+}
+
+.texto {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 125%;
+    font-style: normal;
+    margin-top: 29px;
+    min-width: 480px;
+}
+
+.missaoTxt {
+    background-color: #DDF3FF;
+    border-radius: 16px;
+    position: relative;
+    top: -35px;
+    margin-left: -20px;
+    min-width: 480px;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    align-items: center;
+    padding: 24px;
+    flex-direction: column;
+}
+
+.missaoTxt h2 {
+    color: #00A8FF;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 40px;
+    width: 100%;
+    text-align: justify;
+
+
+}
+
+.missaoTxt span {
+    color: #404040;
+    margin-top: 21px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.pacotes {
+    width: 100vw;
+}
+
+.titlePacotes {
+    background-color: #FED400;
+    color: #57330F;
+    font-size: 24px;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 67.5px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    min-height: 390px;
 
 }
 
@@ -231,16 +322,29 @@ body, html {
     .menu {
         display: none;
     }
-    .missao{
+
+
+
+}
+
+@media only screen and (max-width: 1150px) {
+    .missao {
         min-width: 80vw;
     }
-    .missaoImg{
+
+    .missaoImg {
         min-width: 80vw;
         margin-top: 5vw;
     }
+
     .missaoImg img {
         min-width: 60vw;
         height: auto;
+        margin-left: 20vw;
     }
 
+    .missaoTxt span {
+
+        max-width: 60vw;
+    }
 }
