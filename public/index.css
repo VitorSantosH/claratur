@@ -1,13 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@100;300;400;500;600;700&display=swap');
 
 body, html {
     height: 100vh;
     width: 100vw;
     box-sizing: border-box;
     font-size: 16px;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Commissioner', sans-serif;
     overflow-x: hidden;
-    min-height: 2000px;
+    min-height: 4000px;
 }
 
 .main {
@@ -39,7 +39,7 @@ body, html {
 
 .menu div {
     margin: 0.5vw;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Commissioner', sans-serif;
     background-color: white;
     min-width: 68px;
     min-height: 44px;
@@ -200,7 +200,7 @@ body, html {
     font-size: 24px;
     font-weight: 300;
     color: black;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Commissioner', sans-serif;
     margin-left: 5vw;
 }
 
@@ -247,6 +247,7 @@ body, html {
 
 
 .missaoImg img {
+    width: 30vw;
     min-width: 500px;
     height: auto;
     margin-left: 3vw;
@@ -255,7 +256,7 @@ body, html {
 }
 
 .texto {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Commissioner', sans-serif;
     font-weight: 400;
     font-size: 24px;
     line-height: 125%;
@@ -271,11 +272,12 @@ body, html {
     top: -35px;
     margin-left: -20px;
     min-width: 480px;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Commissioner', sans-serif;
     display: flex;
     align-items: center;
     padding: 24px;
     flex-direction: column;
+    max-width: 30vw;
 }
 
 .missaoTxt h2 {
@@ -295,7 +297,7 @@ body, html {
     font-weight: 400;
     font-size: 16px;
     line-height: 20px;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Commissioner', sans-serif;
 
 }
 
@@ -314,9 +316,121 @@ body, html {
     display: flex;
     justify-content: center;
     min-height: 390px;
+    flex-direction: column;
+    align-items: center;
+
 
 }
 
+.titlePacotes h1 {
+    position: relative;
+    margin-top: -10vw;
+}
+
+.retanguloPacotes {
+    width: 90px;
+    height: 8px;
+    background-color: #57330F;
+}
+
+.conteinerPacotes {
+    overflow: hidden;
+    width: 95vw;
+    height: auto;
+    top: -10vw;
+    position: relative;
+
+}
+
+.cardsPacotes {
+    height: auto;
+    display: flex;
+    height: auto;
+    position: relative;
+    transition: 0.5s ease-in-out;
+    transform: translateX(0);
+    flex-direction: row;
+    width: 100vw;
+    height: auto;
+    position: relative;
+
+}
+
+
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 16px;
+    background-color: white;
+    margin-top: 10px;
+    min-width: 350px;
+    width: 28.7vw;
+    min-height: 491px;
+    object-fit: none;
+    font-family: 'Commissioner', sans-serif;
+    margin-left: 30px;
+    overflow: hidden;
+    box-shadow: 0px 16px 32px rgba(0, 0, 0, 0.15);
+}
+
+.textoCards {
+    padding: 10px 20px 10px 20px;
+
+}
+
+.textoCards span {
+    font-family: 'Commissioner', sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 125%;
+    color: black;
+}
+
+.soliciteConosco {
+    position: relative;
+    margin-top: auto;
+    background: #FF0096;
+    border-radius: 0px 0px 16px 16px;
+    height: 70px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Commissioner', sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 20px;
+    color: white;
+}
+
+.cards h3 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 125%;
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+.cards img {
+
+    border-radius: 16px 16px 0 0;
+    width: 100%;
+    height: auto;
+
+}
+
+#clickPacotes{
+    position: relative;
+    z-index: 2;
+    top: -30vw;
+    left: 92vw;
+
+}
 
 @media only screen and (max-width: 900px) {
     .menu {
