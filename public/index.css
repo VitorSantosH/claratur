@@ -41,12 +41,14 @@ body, html {
     margin: 0.5vw;
     font-family: 'Commissioner', sans-serif;
     background-color: white;
+    padding: 20px;
     min-width: 68px;
     min-height: 44px;
     justify-content: center;
     align-items: center;
     border-radius: 8px;
     display: flex;
+    font-size: 36px;
 }
 
 .menu div:hover {
@@ -335,12 +337,16 @@ body, html {
 
 .conteinerPacotes {
     overflow: hidden;
-    width: 95vw;
+    overflow-x: scroll;
+    width: 93.3vw;
     height: auto;
     top: -10vw;
     position: relative;
+    scrollbar-width: none;
 
 }
+
+
 
 .cardsPacotes {
     height: auto;
@@ -365,8 +371,9 @@ body, html {
     border-radius: 16px;
     background-color: white;
     margin-top: 10px;
-    min-width: 350px;
+    min-width: 410px;
     width: 28.7vw;
+    max-width: 420px;
     min-height: 491px;
     object-fit: none;
     font-family: 'Commissioner', sans-serif;
@@ -420,11 +427,11 @@ body, html {
 
     border-radius: 16px 16px 0 0;
     width: 100%;
-    height: auto;
+    height: 50%;
 
 }
 
-#clickPacotes{
+#clickPacotes {
     position: relative;
     z-index: 2;
     top: -30vw;
