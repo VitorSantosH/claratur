@@ -41,9 +41,9 @@ body, html {
     margin: 0.5vw;
     font-family: 'Commissioner', sans-serif;
     background-color: white;
-    padding: 20px;
+    padding: 10px;
     min-width: 68px;
-    min-height: 44px;
+    min-height: 30px;
     justify-content: center;
     align-items: center;
     border-radius: 8px;
@@ -65,6 +65,7 @@ body, html {
     align-items: center;
     border-radius: 8px;
     display: flex;
+    padding: 10px 15px;
 }
 
 #reserve:hover {
@@ -359,6 +360,7 @@ body, html {
     width: 100vw;
     height: auto;
     position: relative;
+    scrollbar-width: none;
 
 }
 
@@ -380,6 +382,7 @@ body, html {
     margin-left: 30px;
     overflow: hidden;
     box-shadow: 0px 16px 16px rgba(0, 0, 0, 0.15);
+    scrollbar-width: none;
 }
 
 .textoCards {
@@ -442,11 +445,16 @@ body, html {
 .servicos {
     width: 100vw;
     background-color: #FAFAFA;
-    
+
+}
+
+a {
+    text-decoration: none;
+    color: white;
 }
 
 .titleServicos {
-    
+
     color: black;
     font-size: 24px;
     font-weight: 700;
@@ -458,7 +466,7 @@ body, html {
     min-height: 390px;
     flex-direction: column;
     align-items: center;
-    
+
 
 
 }
@@ -494,11 +502,12 @@ body, html {
     margin-top: 30px;
     overflow-y: scroll;
     box-shadow: 0px 16px 16px rgba(0, 0, 0, 0.15);
+    scrollbar-width: none;
 }
 
 .textoServicos {
     padding: 10px 20px 10px 20px;
-    
+
 
 }
 
@@ -508,7 +517,7 @@ body, html {
     font-style: normal;
     font-size: 24px;
     line-height: 125%;
-   
+
 }
 
 .servico h3 {
@@ -527,30 +536,179 @@ body, html {
 
 }
 
-.cardsServicos{
+.cardsServicos {
     display: flex;
     flex-direction: row;
-   
+
     flex-wrap: wrap;
     position: relative;
     top: -10vw;
 }
 
-#receptivo{
+#receptivo {
 
     background-color: #DDF3FF;
-    color: #00A8FF ;
+    color: #00A8FF;
 }
-#translados{
+
+#translados {
     background-color: #FFEBF7;
     color: #FF0096;
 
 }
-#passeios{
+
+#passeios {
     background-color: #FFFBE6;
     color: #EEC600;
 }
 
+
+.contato {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding-top: 30px;
+
+}
+
+.clara {
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+    min-width: 450px;
+    font-family: 'Commissioner', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 125%;
+    
+}
+
+.clara img {
+    max-width: 195px;
+    height: auto;
+}
+
+.clara span {
+    padding: 20px;
+    font-family: 'Commissioner', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 125%;
+}
+
+.localizacao {
+    display: flex;
+    flex-direction: column;
+    min-width: 450px;
+    width: 30vw;
+    font-family: 'Commissioner', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 125%;
+    margin-left: 20px;
+    padding: 20px;
+}
+
+.linksLogos img {
+    min-width: 40px;
+    height: auto;
+}
+
+.headset span {
+    margin-left: 10px;
+}
+
+.formEmail {
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+    min-width: 430px;
+    font-family: 'Commissioner', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 125%;
+    margin-left: 20px;
+    padding: 16px;
+    box-shadow: 0px 4px 32px rgba(0, 0, 0, 0.15);
+    border-radius: 16px;
+    box-sizing: border-box;
+}
+
+.formEmail input {
+
+    background: #FFFFFF;
+    border: 3px solid #BFBFBF;
+    box-sizing: border-box;
+    border-radius: 4px;
+    min-height: 44px;
+    width: 100%;
+    margin-top: 10px;
+    padding: 12px 16px;
+    font-size: 24px;
+
+}
+
+#EnviarEmail {
+    background-color: #FF0096;
+    color: white;
+    justify-content: center;
+    display: flex;
+    padding: 12px 16px;
+    width: 100%;
+    height: 44px;
+    font-size: 36px;
+    align-items: center;
+    margin-top: 10px;
+
+}
+
+#Mensaagem {
+    display: flex;
+    text-align: justify;
+    min-height: 170px;
+    margin-top: 10px;
+    padding: 12px 16px;
+    font-size: 24px;
+}
+
+@media only screen and (max-width: 1600px) {
+
+    .menu div {
+        font-size: 26px;
+    }
+
+}
+
+@media only screen and (max-width: 1280px) {
+
+    .menu div {
+        font-size: 20px;
+        margin: 0.2vw;
+        padding: 10px;
+    }
+
+    .clara {
+        min-width: 400px;
+        width: 50vw;
+
+    }
+    .localizacao{
+        min-width: 400px;
+        width: 50vw;
+    }
+    .formEmail{
+        min-width: 400px;
+        width: 50vw;
+    }
+
+    .contato{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+}
 
 @media only screen and (max-width: 900px) {
     .menu {
