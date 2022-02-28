@@ -37,7 +37,7 @@ function carrossel() {
 }
 
 
-setInterval(carrossel, 10000);
+setInterval(carrossel, 7000);
 
 
 const pacotesDiv = document.getElementById('cardsPacotes')
@@ -74,18 +74,18 @@ purecookieLink = '<a href="https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Coo
 purecookieButton = "OK"; function pureFadeIn(e, o) { var i = document.getElementById(e); i.style.opacity = 0, i.style.display = o || "block", function e() { var o = parseFloat(i.style.opacity); (o += .02) > 1 || (i.style.opacity = o, requestAnimationFrame(e)) }() } function pureFadeOut(e) { var o = document.getElementById(e); o.style.opacity = 1, function e() { (o.style.opacity -= .02) < 0 ? o.style.display = "none" : requestAnimationFrame(e) }() } function setCookie(e, o, i) { var t = ""; if (i) { var n = new Date; n.setTime(n.getTime() + 24 * i * 60 * 60 * 1e3), t = "; expires=" + n.toUTCString() } document.cookie = e + "=" + (o || "") + t + "; path=/" } function getCookie(e) { for (var o = e + "=", i = document.cookie.split(";"), t = 0; t < i.length; t++) { for (var n = i[t]; " " == n.charAt(0);)n = n.substring(1, n.length); if (0 == n.indexOf(o)) return n.substring(o.length, n.length) } return null } function eraseCookie(e) { document.cookie = e + "=; Max-Age=-99999999;" } function cookieConsent() { getCookie("purecookieDismiss") || (document.body.innerHTML += '<div class="cookieConsentContainer" id="cookieConsentContainer"><div class="cookieTitle"><a>' + purecookieTitle + '</a></div><div class="cookieDesc"><p>' + purecookieDesc + " " + purecookieLink + '</p></div><div class="cookieButton"><a onClick="purecookieDismiss();">' + purecookieButton + "</a></div></div>", pureFadeIn("cookieConsentContainer")) } function purecookieDismiss() { setCookie("purecookieDismiss", "1", 7), pureFadeOut("cookieConsentContainer") } window.onload = function () { cookieConsent() }
 
 
-async function insta(){
-    
+async function insta() {
+
 
     //defina aqui o token gerado após clicar em  "Generate Token"
-    const token = "IGQVJYTnhIRWxPSjhMT3hTNUJsbnhJNDB1ZAzRmanZA0RUpYdzhaWmNfc2VwbzlWUU5jQXFUY3JFbmdORTVDUEhKUGluUFpwWmJLSFJIRWdRcTk5U2tqREdqRGg4cVpJNGw2bWxsdFpuM053endvU1VmcwZDZD";
-
+    // const token = "IGQVJYTnhIRWxPSjhMT3hTNUJsbnhJNDB1ZAzRmanZA0RUpYdzhaWmNfc2VwbzlWUU5jQXFUY3JFbmdORTVDUEhKUGluUFpwWmJLSFJIRWdRcTk5U2tqREdqRGg4cVpJNGw2bWxsdFpuM053endvU1VmcwZDZD";
+    const token = 'IGQVJVV1N3VjZADaFRQT0RhWGJ2eGF5QXhQTWN5cklBYnVtLUl5RkxwODdUOTBIYkNNbTRHLXFHdjNpSXRVN2pnRlIxMkRYWi1nc3BkbzlRWlZA6TF9wRFUtQTFzRjkxZAlhUWmNtMS1rSmhKTlNsTmVtVgZDZD'
     const url = 'https://graph.instagram.com/me/media?access_token=' + token + '&fields=media_url,media_type,caption,permalink';
     //percorremos as imagens recebidas
 
 
 
-    var obj =  await fetch(url)
+    var obj = await fetch(url)
         .then(res => res.json())
         .then(res => {
 
@@ -96,7 +96,7 @@ async function insta(){
 
             let images = reader;
             images_content = '<div class="insta">';
-            for (let c = 0; c < images.length; c++) {
+            for (let c = 0; c < 8; c++) {
 
                 let pic = images[c];
                 let caption = pic.caption !== null ? pic.caption : '';
@@ -124,12 +124,49 @@ async function insta(){
 
 
 window.onload = async function () {
-   
+
     document.getElementById('insta').innerHTML = await insta();
-    
+
 }
 
 
+function enviarEmail() {
+
+    if(document.getElementById('Nome').value == "") {
+        return 
+    }
+    const data = {
+        name: document.getElementById('Nome').value,
+        email: document.getElementById('E-mail').value,
+        message: document.getElementById('Mensaagem').value
+    }
+
+    fetch('/email', {
+        method: 'POST',
+        headers: {
+            'Accept': 'application/json',
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(data)
+    })
+        .then(res => res.json())
+        .then(res => {
+            console.log(res)
+        })
+        .catch(err => err.json())
+        .catch(err => {
+            console.log(err)
+        })
+
+
+    document.getElementById('Nome').value = ""
+    document.getElementById('E-mail').value = ""
+    document.getElementById('Mensaagem').value = ""
+
+    return 
+}
+
+document.getElementById('EnviarEmail').onclick = enviarEmail();
 
 /*
  fetch("/insta")

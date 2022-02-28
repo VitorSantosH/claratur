@@ -8,7 +8,7 @@ const axios = require('axios');
 async function insta() {
 
     //defina aqui o token gerado após clicar em  "Generate Token"
-    const token = "IGQVJYTnhIRWxPSjhMT3hTNUJsbnhJNDB1ZAzRmanZA0RUpYdzhaWmNfc2VwbzlWUU5jQXFUY3JFbmdORTVDUEhKUGluUFpwWmJLSFJIRWdRcTk5U2tqREdqRGg4cVpJNGw2bWxsdFpuM053endvU1VmcwZDZD";
+    const token = "";
 
     const url = 'https://graph.instagram.com/me/media?access_token=' + token + '&fields=media_url,media_type,caption,permalink';
     //percorremos as imagens recebidas

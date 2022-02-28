@@ -12,7 +12,7 @@ body, html {
 }
 
 .main {
-    max-width: 1920px;
+    
     display: flex;
     margin-top: 4vw;
     flex-direction: row;
@@ -98,6 +98,8 @@ body, html {
     max-width: 1280px;
     width: 80vw;
     height: auto;
+    overflow-x: scroll;
+    scrollbar-width: none;
 
 }
 
@@ -507,14 +509,13 @@ a {
     align-items: center;
     border-radius: 16px;
     background-color: white;
-    margin-top: 10px;
     min-width: 300px;
-    width: 24vw;
+    width: 20vw;
     max-width: 400px;
     height: auto;
     object-fit: none;
     font-family: 'Commissioner', sans-serif;
-    margin-left: 50px;
+    margin-left: 2vw;
     margin-top: 30px;
     overflow-y: scroll;
     box-shadow: 0px 16px 16px rgba(0, 0, 0, 0.15);
@@ -555,7 +556,7 @@ a {
 .cardsServicos {
     display: flex;
     flex-direction: row;
-
+    justify-content: flex-start;
     flex-wrap: wrap;
     position: relative;
     top: -10vw;
@@ -672,10 +673,10 @@ a {
     width: 30vw;
     min-width: 350px;
     font-family: 'Commissioner', sans-serif;
-    font-weight: 400;
-    font-size: 20px;
+    font-weight: 300;
+    font-size: 16px;
     line-height: 125%;
-    margin-left: 20px;
+    margin-left: 16px;
     padding: 16px;
     box-shadow: 0px 4px 32px rgba(0, 0, 0, 0.15);
     border-radius: 16px;
@@ -687,14 +688,15 @@ a {
     background: #FFFFFF;
     border: 3px solid #BFBFBF;
     box-sizing: border-box;
-    border-radius: 4px;
+    border-radius: 10px;
     min-height: 44px;
     width: 100%;
     margin-top: 10px;
-    padding: 12px 16px;
+    
     font-size: 20px;
 
 }
+
 
 #EnviarEmail {
     background-color: #FF0096;
@@ -702,25 +704,33 @@ a {
     justify-content: center;
     display: flex;
     padding: 12px 16px;
-    width: 100%;
+    width: 60%;
     height: 44px;
-    font-size: 30px;
+    font-size: 20px;
     align-items: center;
     margin-top: 10px;
     border-radius: 16px;
+    border: 0px ;
 
+}
+#EnviarEmail:hover {
+    background-color: #FF80CA;
+}
+#EnviarEmail:active{
+    background-color: #a51176;
 }
 
 #Mensaagem {
+    font-family: 'Commissioner', sans-serif;
     display: flex;
     text-align: justify;
     min-height: 170px;
     margin-top: 10px;
     padding: 12px 16px;
-    font-size: 24px;
+    font-size: 18px;
     border: 3px solid #BFBFBF;
     box-sizing: border-box;
-    border-radius: 4px;
+    border-radius: 10px;
 }
 
 .linksLogos img {
@@ -761,6 +771,9 @@ a {
     flex-wrap: wrap;
     position: relative;
     top: -2vw;
+    padding-left: 2vw;
+    width: 100%;
+    justify-content: center;
 }
 
 .postInsta {
@@ -880,6 +893,11 @@ a {
     cursor: pointer;
     background: #3e9b67
 }
+.cookieConsentContainer {
+    bottom: 0 !important;
+    left: 0 !important;
+    width: 100% !important
+}
 
 
 
@@ -909,17 +927,13 @@ a {
         font-size: 16px;
     }
 
-    .cardsServicos {
-        justify-content: center;
-    }
+ 
 
 }
 
 @media only screen and (max-width: 1100px) {
 
-    .cardsServicos {
-        justify-content: center;
-    }
+   
 
     .servico {
         min-width: 300px;
@@ -948,7 +962,7 @@ a {
 
     .formEmail {
         min-width: 400px;
-        width: 50vw;
+        width: 40vw;
     }
 
 
@@ -962,7 +976,17 @@ a {
 
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1200px) {
+
+    .saibaMais{
+        left: 5vw;
+    }
+    .saibaMais img {
+        max-width: 3vw;
+        width: auto;
+        max-height: 100px;
+        height: auto;
+    }
 
     .tranformTitle {
         top: -250px;
@@ -973,10 +997,6 @@ a {
         justify-content: space-around;
     }
 
-
-}
-
-@media only screen and (max-width: 1150px) {
     .missao {
         min-width: 80vw;
     }
@@ -999,10 +1019,10 @@ a {
 }
 
 @media (max-width:980px) {
-    .cookieConsentContainer {
-        bottom: 0 !important;
-        left: 0 !important;
-        width: 100% !important
+   
+
+    .cardsServicos{
+        justify-content: center;
     }
 
     .tranformTitle h1 {
