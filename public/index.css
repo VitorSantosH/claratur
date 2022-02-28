@@ -12,7 +12,7 @@ body, html {
 }
 
 .main {
-    
+
     display: flex;
     margin-top: 4vw;
     flex-direction: row;
@@ -37,7 +37,7 @@ body, html {
 
 .logos img {
     margin: 1vw;
-    height: 30px;
+    height: 25px;
     width: auto;
 
 }
@@ -219,7 +219,7 @@ body, html {
     max-width: 40vw;
     flex-direction: column;
     flex-wrap: wrap;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 300;
     color: black;
     font-family: 'Commissioner', sans-serif;
@@ -280,7 +280,6 @@ body, html {
 .texto {
     font-family: 'Commissioner', sans-serif;
     font-weight: 400;
-    font-size: 18px;
     line-height: 125%;
     font-style: normal;
     margin-top: 29px;
@@ -304,7 +303,7 @@ body, html {
 
 .missaoTxt h2 {
     color: #00A8FF;
-    font-size: 32px;
+    font-size: 24px;
     font-weight: 700;
     line-height: 40px;
     width: 100%;
@@ -347,6 +346,7 @@ body, html {
 .titlePacotes h1 {
     position: relative;
     margin-top: -10vw;
+    font-size: 36px;
 }
 
 .retanguloPacotes {
@@ -437,8 +437,8 @@ body, html {
 
 .cards h3 {
     font-style: normal;
-    font-weight: bold;
-    font-size: 24px;
+    font-weight: 500;
+    font-size: 22px;
     line-height: 125%;
     color: #000000;
     margin-bottom: 10px;
@@ -474,7 +474,7 @@ a {
 .titleServicos {
 
     color: black;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 700;
     font-style: normal;
     line-height: 67.5px;
@@ -510,8 +510,8 @@ a {
     border-radius: 16px;
     background-color: white;
     min-width: 300px;
-    width: 20vw;
     max-width: 400px;
+    width: 20vw;
     height: auto;
     object-fit: none;
     font-family: 'Commissioner', sans-serif;
@@ -549,7 +549,7 @@ a {
 
     border-radius: 16px 16px 0 0;
     width: 100%;
-    min-height: 50%;
+    height: 50%;
 
 }
 
@@ -571,7 +571,7 @@ a {
 }
 
 #receptivoLink {
-    background-color: #00A8FF; 
+    background-color: #00A8FF;
 }
 
 #prvadosLink {
@@ -579,7 +579,7 @@ a {
 }
 
 #passeiosLink {
-    background-color: #EEC600;  
+    background-color: #EEC600;
 }
 
 #translados {
@@ -692,7 +692,7 @@ a {
     min-height: 44px;
     width: 100%;
     margin-top: 10px;
-    
+
     font-size: 20px;
 
 }
@@ -710,13 +710,15 @@ a {
     align-items: center;
     margin-top: 10px;
     border-radius: 16px;
-    border: 0px ;
+    border: 0px;
 
 }
+
 #EnviarEmail:hover {
     background-color: #FF80CA;
 }
-#EnviarEmail:active{
+
+#EnviarEmail:active {
     background-color: #a51176;
 }
 
@@ -742,7 +744,8 @@ a {
 ::-webkit-scrollbar {
     display: none;
 }
-.cartoesAceitos{
+
+.cartoesAceitos {
     margin-top: 20px;
     display: flex;
     flex-direction: column;
@@ -750,6 +753,7 @@ a {
     width: 100vw;
     padding-left: 10px;
 }
+
 .cartoesImgs {
     display: flex;
     flex-direction: row;
@@ -795,7 +799,7 @@ a {
 .titleInsta {
 
     color: white;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 700;
     font-style: normal;
     line-height: 67.5px;
@@ -893,6 +897,7 @@ a {
     cursor: pointer;
     background: #3e9b67
 }
+
 .cookieConsentContainer {
     bottom: 0 !important;
     left: 0 !important;
@@ -906,14 +911,17 @@ a {
     .body {
         overflow-x: hidden;
     }
-    .tranformTitle h1{
+
+    .tranformTitle h1 {
         font-size: 48px;
     }
+
     .tranformTitle {
         left: -2vw;
         top: -300px;
     }
-    .circulos{
+
+    .circulos {
         left: -4vw;
     }
 
@@ -927,13 +935,13 @@ a {
         font-size: 16px;
     }
 
- 
+
 
 }
 
 @media only screen and (max-width: 1100px) {
 
-   
+
 
     .servico {
         min-width: 300px;
@@ -961,8 +969,7 @@ a {
     }
 
     .formEmail {
-        min-width: 400px;
-        width: 40vw;
+        min-width: 200px;
     }
 
 
@@ -970,17 +977,25 @@ a {
         top: -300px;
         left: -10vw;
     }
-    .servOrcamento{
+
+    .servOrcamento {
         font-size: 16px;
     }
+    .servico{
+        max-height: 530px;
+        max-width: 414px;
+    }
+
+
 
 }
 
 @media only screen and (max-width: 1200px) {
 
-    .saibaMais{
+    .saibaMais {
         left: 5vw;
     }
+
     .saibaMais img {
         max-width: 3vw;
         width: auto;
@@ -1019,9 +1034,9 @@ a {
 }
 
 @media (max-width:980px) {
-   
 
-    .cardsServicos{
+
+    .cardsServicos {
         justify-content: center;
     }
 
@@ -1038,9 +1053,9 @@ a {
     }
 
     .circulos {
-       
+
         top: 60px;
         margin-left: 4vw;
-      }
+    }
 
 }
