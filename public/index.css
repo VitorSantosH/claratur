@@ -34,10 +34,14 @@ body, html {
 
 .logos img {
     margin: 1vw;
-    min-height: 30px;
+    height: 30px;
     width: auto;
 
 }
+#claraturLogo{
+    height: 70px;
+}
+
 
 
 
@@ -64,7 +68,7 @@ body, html {
     background-color: #FF0096;
     color: white;
     min-width: 134px;
-    min-height: 44px;
+    
     justify-content: center;
     align-items: center;
     border-radius: 8px;
@@ -99,7 +103,7 @@ body, html {
     border-radius: 24px;
     height: auto;
     position: relative;
-    transition: 0.5s ease-in-out;
+    transition: 0.8s ease-in-out;
     transform: translateX(0);
     display: flex;
     max-width: 1280px;
@@ -800,6 +804,71 @@ a {
         left: -10vw;
     }
 
+}
+
+
+.insta{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
+    top: -5vw;
+}
+.postInsta {
+    width: 320px;
+    height: auto;
+    max-height: 350px;
+    overflow: hidden;
+    margin: 0.3vw;
+    
+}
+
+.postInsta img, .postInsta {
+    width: 320px;
+    height: auto;
+    border-radius: 16px;
+    
+}
+
+.titleInsta {
+
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 67.5px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    min-height: 390px;
+    flex-direction: column;
+    align-items: center;
+    background: #d6249f;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+    box-shadow: 0px 3px 10px rgba(0,0,0,.25);
+
+
+}
+#logoPagInsta{
+    height: 40px;
+    width: auto;
+    position: relative;
+    top: 10px;
+    filter: brightness(100);
+}
+
+.titleInsta h1 {
+    position: relative;
+    margin-top: -10vw;
+}
+
+.retanguloinsta {
+    width: 90px;
+    height: 8px;
+    background-color: white;
+    opacity: .25;
+    z-index: 2;
 }
 
 @media only screen and (max-width: 1000px) {

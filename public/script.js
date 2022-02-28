@@ -37,7 +37,7 @@ function carrossel() {
 }
 
 
-setInterval(carrossel, 4000);
+setInterval(carrossel, 10000);
 
 
 const pacotesDiv = document.getElementById('cardsPacotes')
@@ -95,12 +95,12 @@ async function insta(){
 
 
             let images = reader;
-            images_content = '<div class="row">';
+            images_content = '<div class="insta">';
             for (let c = 0; c < images.length; c++) {
 
                 let pic = images[c];
                 let caption = pic.caption !== null ? pic.caption : '';
-                images_content += '<div class="col-md-3"><a target="_target" href="' + pic.permalink + '"><img title="' + caption + '" alt="' + caption + '" src="' + pic.media_url + '" width="128"></a></div>';
+                images_content += '<div class="postInsta"><a target="_target" href="' + pic.permalink + '"><img title="' + caption + '" alt="' + caption + '" src="' + pic.media_url + '"></a></div>';
             }
             images_content += '</div>';
             // document.getElementById('insta').innerHTML = images_content;
