@@ -14,7 +14,8 @@ function carrossel() {
         idx = 0;
     }
 
-    let largura = document.getElementById('img').offsetWidth;
+    let largura = document.getElementById('img').offsetWidth 
+   
 
     imgs.style.transform = `translateX(${-idx * largura}px)`
 
@@ -37,12 +38,24 @@ function carrossel() {
 }
 
 
-setInterval(carrossel, 7000);
+setInterval(() => {
+    if(document.getElementById('img') == null){
+        return 
+    }
+    carrossel
+}, 5000);
+
+
 
 
 const pacotesDiv = document.getElementById('cardsPacotes')
 const pacotesImgs = document.querySelectorAll("#cardsPacotes .cards");
 const buttonPacotes = document.getElementById('clickPacotes');
+const buttonPacotes2 = document.getElementById('clickPacotes2');
+
+buttonPacotes2.onclick = function () {
+    carrossel2Menos();
+}
 
 buttonPacotes.onclick = function () {
     carrossel2();
@@ -66,6 +79,26 @@ function carrossel2() {
 
 
 }
+
+function carrossel2Menos() {
+
+    // pacotesImgs[idx2].style.display = "none"
+
+
+
+    if (idx2 <= 0) {
+        return
+    }
+    idx2 = idx2 - 1;
+
+
+    let largura = (document.querySelectorAll('#cardsPacotes .cards')[0].offsetWidth + 30);
+
+    pacotesDiv.style.transform = `translateX(${(-idx2 * largura)}px)`
+
+
+}
+
 
 var purecookieTitle = "Usamos cookies.",
     purecookieDesc = "Usamos cookies e outras tecnologias de rastreamento para melhorar sua experiência de navegação em nosso site, mostrar conteúdo personalizado e anúncios direcionados, analisar o tráfego de nosso site e entender de onde vêm nossos visitantes."
@@ -132,8 +165,8 @@ window.onload = async function () {
 
 function enviarEmail() {
 
-    if(document.getElementById('Nome').value == "") {
-        return 
+    if (document.getElementById('Nome').value == "") {
+        return
     }
     const data = {
         name: document.getElementById('Nome').value,
@@ -163,7 +196,7 @@ function enviarEmail() {
     document.getElementById('E-mail').value = ""
     document.getElementById('Mensaagem').value = ""
 
-    return 
+    return
 }
 
 document.getElementById('EnviarEmail').onclick = enviarEmail();
