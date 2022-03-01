@@ -16,6 +16,9 @@ function carrossel() {
 
     let largura = document.getElementById('img').offsetWidth 
    
+    if(document.getElementById('img').offsetWidth == null ) {
+        return 
+    }
 
     imgs.style.transform = `translateX(${-idx * largura}px)`
 
@@ -38,12 +41,7 @@ function carrossel() {
 }
 
 
-setInterval(() => {
-    if(document.getElementById('img') == null){
-        return 
-    }
-    carrossel
-}, 5000);
+setInterval(carrossel, 5000);
 
 
 
