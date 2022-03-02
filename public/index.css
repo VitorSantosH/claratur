@@ -383,7 +383,15 @@ body, html {
 
 }
 
-
+#tituloClientes{
+    width: 100vw;
+    display: flex;
+    font-family: 'Commissioner', sans-serif;
+    line-height: 125%;
+    justify-content: center;
+    font-size: 36px;
+    padding-top: 2vw;
+}
 
 .cards {
     display: flex;
@@ -987,11 +995,14 @@ a {
 }
 
 .lista {
-    padding-top: 5vw;
+    padding-top: 2vw;
     font-family: 'Commissioner', sans-serif;
     font-size: 18px;
     line-height: 125%;
     padding-bottom: 5vw;
+    padding-left: 3vw;
+    padding-right: 3vw;
+  
 }
 
 .lista li {
