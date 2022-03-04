@@ -383,7 +383,7 @@ body, html {
 
 }
 
-#tituloClientes{
+#tituloClientes {
     width: 100vw;
     display: flex;
     font-family: 'Commissioner', sans-serif;
@@ -455,7 +455,7 @@ body, html {
 .cards img {
 
     border-radius: 16px 16px 0 0;
-    width: 100%;
+    max-width: 120%;
     height: 50%;
 
 }
@@ -532,7 +532,7 @@ a {
     min-width: 300px;
     max-width: 400px;
     width: 20vw;
-    max-height: 470px ;
+    max-height: 470px;
     height: auto;
     object-fit: none;
     font-family: 'Commissioner', sans-serif;
@@ -569,9 +569,9 @@ a {
 .servico img {
 
     border-radius: 16px 16px 0 0;
-    width: 100%;
+    max-width: 120%;
     height: 50%;
-    
+
 
 }
 
@@ -725,7 +725,7 @@ a {
     font-family: 'Commissioner', sans-serif;
     font-size: 20px;
     padding-left: 15px;
-    
+
 
 }
 
@@ -792,7 +792,7 @@ a {
     box-sizing: border-box;
     text-align: center;
     position: relative;
-    
+
 }
 
 .cartoesImgs {
@@ -950,23 +950,23 @@ a {
 }
 
 
-@media only  screen and (min-width: 1600px ) {
+@media only screen and (min-width: 1600px) {
 
-    
+
     #clickPacotes {
         position: relative;
         z-index: 2;
         top: -30vw;
         left: 88vw;
-    
+
     }
-    
+
     #clickPacotes2 {
         position: relative;
         z-index: 3;
         top: -30vw;
         left: -6vw;
-    
+
     }
 
 }
@@ -1002,7 +1002,7 @@ a {
     padding-bottom: 5vw;
     padding-left: 3vw;
     padding-right: 3vw;
-    
+
 }
 
 .lista li {
@@ -1017,7 +1017,7 @@ a {
     .menu div {
         font-size: 16px;
     }
-   
+
 
 
 }
@@ -1051,7 +1051,7 @@ a {
         width: 50vw;
     }
 
-    
+
 
 
     .tranformTitle {

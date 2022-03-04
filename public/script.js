@@ -65,7 +65,9 @@ function carrossel2() {
 
     idx2++;
 
-    if (idx2 > pacotesImgs.length - 3) {
+    const cards = Math.trunc((document.querySelectorAll('.main')[0].offsetWidth / 350 )) 
+
+    if (idx2 > pacotesImgs.length - (cards -1 )) {
         idx2 = 0;
     }
 
@@ -110,7 +112,7 @@ async function insta() {
 
     //defina aqui o token gerado após clicar em  "Generate Token"
     // const token = "IGQVJYTnhIRWxPSjhMT3hTNUJsbnhJNDB1ZAzRmanZA0RUpYdzhaWmNfc2VwbzlWUU5jQXFUY3JFbmdORTVDUEhKUGluUFpwWmJLSFJIRWdRcTk5U2tqREdqRGg4cVpJNGw2bWxsdFpuM053endvU1VmcwZDZD";
-    const token = 'IGQVJVV1N3VjZADaFRQT0RhWGJ2eGF5QXhQTWN5cklBYnVtLUl5RkxwODdUOTBIYkNNbTRHLXFHdjNpSXRVN2pnRlIxMkRYWi1nc3BkbzlRWlZA6TF9wRFUtQTFzRjkxZAlhUWmNtMS1rSmhKTlNsTmVtVgZDZD'
+    const token = 'IGQVJWX2FVeWNuZAGF5YWNIZAEtPVk5NZA2dIOUoyWnhfX1dTeEFibVkyRnRRUzFGdlFMMzZA5Mk9ITmpCZAV9xS1ltRlhsN1lYMFZAMLVI4cVhHbkNTSFB0Q3FFUEpsR2NsdU1tSDZAyMnQ5VGFiNF9qY294MQZDZD'
     const url = 'https://graph.instagram.com/me/media?access_token=' + token + '&fields=media_url,media_type,caption,permalink';
     //percorremos as imagens recebidas
 
