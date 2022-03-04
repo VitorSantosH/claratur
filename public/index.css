@@ -529,9 +529,6 @@ a {
     align-items: center;
     border-radius: 16px;
     background-color: white;
-    min-width: 300px;
-    max-width: 400px;
-    width: 20vw;
     max-height: 470px;
     height: auto;
     object-fit: none;
@@ -541,6 +538,7 @@ a {
     overflow-y: scroll;
     box-shadow: 0px 16px 16px rgba(0, 0, 0, 0.15);
     scrollbar-width: none;
+    width: 350px;
 }
 
 .textoServicos {
@@ -569,11 +567,12 @@ a {
 .servico img {
 
     border-radius: 16px 16px 0 0;
-    max-width: 120%;
+    max-width: 150%;
     height: 50%;
-
-
 }
+
+
+
 
 .cardsServicos {
     display: flex;
